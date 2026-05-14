@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Listado de videojuegos</h1>
+    <div class="row">
+        @for(elemento of videojuegos; track $index) {
+        <div class="col-6 border border-1">
+            <app-mostrar [videojuego]="elemento"></app-mostrar>
+        </div>
+        }
+    </div>
+</div>

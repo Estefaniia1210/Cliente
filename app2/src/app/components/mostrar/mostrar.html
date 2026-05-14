@@ -1,0 +1,13 @@
+<div class="container">
+<div class="row">
+        <div *ngFor="let elemento of elservicio.videojuegos" class="col-5 border">
+            <p>{{ elemento.id_juego }}</p>
+            <p>{{ elemento.title }}</p>
+            <p>{{ elemento.genre }}</p>
+            <p>{{ elemento.price }}</p>
+        </div>
+        <hr/>
+        <button class="btn btn-success" (click)="elservicio.insertar()">Insertar</button>
+        
+    </div>
+</div>
